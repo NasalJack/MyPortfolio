@@ -1,10 +1,12 @@
 import React from 'react'
 
 import ProjectEntry from '../../Components/ProjectEntry/ProjectEntry'
+import Projects from '../../Store/Projects'
 
-const Projects = () => {
+const ProjectsPage = () => {
   const list = []
-  list.push(<ProjectEntry project='project'/>)
+  console.log(Projects)
+  Projects.forEach((project, index) => list.push(<ProjectEntry key={index} id={index} project={project} />))
   return (
     <div className='Projects'>
       <ul className="project-default">
@@ -14,4 +16,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default ProjectsPage

@@ -52,7 +52,7 @@ h2 {
   position: fixed;
   list-style-type: none;
   flex-direction: column;
-  margin-top: -50px;
+  margin-top: 0px;
   border: rgba(0, 0, 0, .9) 1px solid;
   text-align: center;
 }

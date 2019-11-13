@@ -6,7 +6,7 @@ import Contact from '../Routes/Contact/Contact'
 import Landing from '../Routes/Landing/Landing'
 import NotFound from '../Routes/NotFound/NotFound'
 import ProjectPage from '../Routes/ProjectPage/ProjectPage'
-import Projects from '../Routes/Projects/Projects'
+import Projects from '../Routes/ProjectsPage/ProjectsPage'
 
 import Header from '../Components/Header/Header'
 import Footer from '../Components/Footer/Footer'
@@ -27,7 +27,7 @@ class App extends React.Component {
           <Route exact path={'/about'} component={About}/>
           <Route exact path={'/contact'} component={Contact}/>
           <Route exact path={'/projects'} component={Projects}/>
-          <Route path={'/project/:name'} component={ProjectPage}/>
+          <Route path={'/project/:index'} component={ProjectPage}/>
           <Route component={NotFound}/>
         </Switch>
       </div>

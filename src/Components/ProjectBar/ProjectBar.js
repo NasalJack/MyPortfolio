@@ -1,11 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+import Projects from '../../Store/Projects'
 
 const ProjectBar = () => {
+  const list = []
+  Projects.forEach(
+    (project, index) => list.push(
+      <Link to={'/project/'+index}>
+        <li className="project-list-item">{project.name}</li>
+      </Link>
+    )
+  )
   return (
     <ul className="ProjectBar project-list">
-        <li className="project-list-item">Magic Quiz</li>
-        <li className="project-list-item">Buffy Quiz</li>
-        <li className="project-list-item">Bookmarker</li>
+        {list}
     </ul>
   )
 }
