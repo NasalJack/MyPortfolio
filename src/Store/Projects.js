@@ -1,5 +1,23 @@
 const Projects = [
   {
+    name: 'Gameplay Valet',
+    title: 'Gameplay Valet',
+    screenshot: 'GameplayValet',
+    builtWith: 'Javascript, React, PostgreSQL, Knex, Node, Express',
+    content: "Gameplay Valet is intended to be a personal resource for frequent boardgamers. It serves as a repository of rules, tips, and notes for games you own (which you can track with a personalized list) or any game that exists in its database.",
+    page: 'https://gameplayvalet.now.sh/',
+    repo: 'https://github.com/NasalJack/Gameplay-Valet-Client'
+  },
+  {
+    name: 'GoodMeal',
+    title: 'GoodMeal',
+    screenshot: 'GoodMeal',
+    builtWith: 'Javascript, React, PostgreSQL, Knex, Firebase, Node, Express',
+    content: "GoodMeal is an app for creating and storing recipes along with a host of periphery functionalities, like creating shopping lists from a recipe based on what you need and already own or checking your owned ingredients against recipes to find what you can make with what you have on hand.",
+    page: 'https://good-meal-client.herokuapp.com/',
+    repo: 'https://github.com/thinkful-ei-firefly/recipe-client'
+  },
+  {
     name: 'Magic Quiz',
     title: 'Magic Quiz App',
     screenshot: 'magicQuiz',

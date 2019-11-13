@@ -44,7 +44,7 @@ h2 {
 .project-list {
   display: flex;
   height: 100vh;
-  padding-top: 35vh;
+  padding-top: 18vh;
   padding-left: 0;
   padding-right: 0;
   background-color: rgba(41, 56, 83, .9);
@@ -53,8 +53,13 @@ h2 {
   list-style-type: none;
   flex-direction: column;
   margin-top: 0px;
+  top: 0;
   border: rgba(0, 0, 0, .9) 1px solid;
   text-align: center;
+}
+
+.ProjectsPage, .ProjectPage {
+  margin-left: 100px;
 }
 
 .project-list-item {
@@ -105,7 +110,8 @@ footer {
   min-height: 100%;
   padding: 0 0 0 0 ;
   margin: 0 0 0 0;
-  margin-top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .project-title {
@@ -157,7 +163,8 @@ button, .project-list-item, .nav-item, .thumbnail-image, .thumbnail-text, .conta
 }
 
 .thumbnail-image {
-  width: 100px;
+  border-radius: 10px;
+  max-width: 95%;
   margin-bottom: 0;
   display: block;
   margin-left: auto;
@@ -165,9 +172,22 @@ button, .project-list-item, .nav-item, .thumbnail-image, .thumbnail-text, .conta
 }
 
 .thumbnail-text {
-  margin: 0 0 20px 0 ;
+  margin: 5px 0 0 0 ;
   text-align: center;
-  color: #A03E04;
+  color: rgb(216, 169, 49);
+}
+
+.project-thumbnail {
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  background-color: rgba(41, 56, 83, .9);
+  border: 1px solid black;
+  box-shadow: 2px 2px 8px;
+  margin-bottom: 20px;
 }
 
 .hero {
@@ -273,6 +293,10 @@ a {
     width: 200px;
   }
 
+  .ProjectsPage, .ProjectPage {
+    margin-left: 200px;
+  }
+
   .project-list-item {
     margin-bottom: 40px;
   }
@@ -282,7 +306,6 @@ a {
   }
 
   .thumbnail-text {
-    margin-bottom: 40px;
     font-size: 32px;
   }
 
@@ -346,6 +369,6 @@ a {
   .about {
     margin-right: 20vw;
     margin-left: 20vw;
-    font-size: 22px;
+    font-size: 24px;
   }
 }

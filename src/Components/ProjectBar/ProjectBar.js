@@ -7,7 +7,7 @@ const ProjectBar = () => {
   const list = []
   Projects.forEach(
     (project, index) => list.push(
-      <Link to={'/project/'+index}>
+      <Link key={index} to={'/project/'+index}>
         <li className="project-list-item">{project.name}</li>
       </Link>
     )

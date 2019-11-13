@@ -8,7 +8,7 @@ const ProjectsPage = () => {
   console.log(Projects)
   Projects.forEach((project, index) => list.push(<ProjectEntry key={index} id={index} project={project} />))
   return (
-    <div className='Projects'>
+    <div className='ProjectsPage'>
       <ul className="project-default">
         {list}
       </ul>
