@@ -8,12 +8,20 @@ import NotFound from '../Routes/NotFound/NotFound'
 import ProjectPage from '../Routes/ProjectPage/ProjectPage'
 import Projects from '../Routes/Projects/Projects'
 
+import Header from '../Components/Header/Header'
+import Footer from '../Components/Footer/Footer'
+import ProjectBar from '../Components/ProjectBar/ProjectBar'
+
 import './App.css';
 
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div className="App container">
+        <Header />
+        <Footer />
+        <Route exact path={'/projects'} component={ProjectBar}/>
+        <Route path={'/project/:name'} component={ProjectBar}/>
         <Switch>
           <Route exact path={'/'} component={Landing}/>
           <Route exact path={'/about'} component={About}/>
