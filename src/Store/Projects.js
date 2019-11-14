@@ -27,12 +27,21 @@ const Projects = [
     repo: 'https://github.com/thinkful-ei-firefly/spaced-repetition-sam-ahmed-client'
   },
   {
+    name: 'Star Wars Search',
+    title: 'Star Wars Searcher',
+    screenshot: 'StarWars',
+    builtWith: 'HTML, CSS, Javascript, and React',
+    content: "This is a very simple app that allows a user to search a database of Star Wars characters, planets, vehicles, species, and movies for a particular term and get back any matching results.",
+    page: 'https://sams-star-wars-searchers.now.sh/',
+    repo: 'https://github.com/thinkful-ei-firefly/star-wars-sam'
+  },
+  {
     name: 'Petful',
     title: 'Petful',
     screenshot: 'Petful',
-    builtWith: 'HTML, CSS, Javascript, React, and Node',
+    builtWith: 'HTML, CSS, Javascript, React, Linked Lists, and Node',
     content: "Petful is an app for adopting from a hypothetical animal shelter where only the cat and dog that have been with the shelter the longest are available for adoption at any given time. As part of a challenge, this app was built in a single day.",
-    page: 'https://petful-sam-richard.now.sh/pets',
+    page: 'https://petful-sam-richard.now.sh/',
     repo: 'https://github.com/thinkful-ei-firefly/petful-client-sam-richard'
   },
   {

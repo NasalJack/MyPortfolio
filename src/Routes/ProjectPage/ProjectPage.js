@@ -1,10 +1,12 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
 
 import Projects from '../../Store/Projects'
 import Screenshots from '../../Screenshots/Screenshots'
 
 class ProjectPage extends React.Component {
   render() {
+    const { hiddenBar } = this.props
     const project = Projects[this.props.match.params.index]
     if (!project) return (
       <div className='ProjectPage'>
@@ -14,7 +16,7 @@ class ProjectPage extends React.Component {
     )
     const { title, screenshot, builtWith, content, page, repo } = project
     return (
-      <div className='ProjectPage'>
+      <div className={hiddenBar ? 'sidebar-close ProjectPage' : 'sidebar-open ProjectPage'}>
         <h2 className="project-title">{title}</h2>
         <img className="screenshot" src={Screenshots[screenshot]} alt="Example Screenshot of the App" />
         <div className="content">
@@ -34,4 +36,4 @@ class ProjectPage extends React.Component {
   }
 }
 
-export default ProjectPage
+export default withRouter(ProjectPage)

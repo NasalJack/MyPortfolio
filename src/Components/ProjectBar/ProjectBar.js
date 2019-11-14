@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 
 import Projects from '../../Store/Projects'
 
-const ProjectBar = () => {
+const ProjectBar = (props) => {
+  const { hiddenBar } = props
   const list = []
   Projects.forEach(
     (project, index) => list.push(
@@ -13,7 +14,7 @@ const ProjectBar = () => {
     )
   )
   return (
-    <ul className="ProjectBar project-list">
+    <ul className={hiddenBar ? 'project-list hidden' : 'project-list revealed'}>
         {list}
     </ul>
   )

@@ -5,6 +5,7 @@ import GoodMeal from './GoodMeal.png'
 import GameplayValet from './GameplayValet.png'
 import SpacedRepetition from './SpacedRepetition.png'
 import Petful from './Petful.png'
+import StarWars from './StarWars.png'
 
 const Screenshots = {
   bookmark,
@@ -13,7 +14,8 @@ const Screenshots = {
   GoodMeal,
   GameplayValet,
   SpacedRepetition,
-  Petful
+  Petful,
+  StarWars
 }
 
 export default Screenshots

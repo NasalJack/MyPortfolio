@@ -3,12 +3,13 @@ import React from 'react'
 import ProjectEntry from '../../Components/ProjectEntry/ProjectEntry'
 import Projects from '../../Store/Projects'
 
-const ProjectsPage = () => {
+const ProjectsPage = (props) => {
+  const { hiddenBar } = props
   const list = []
   console.log(Projects)
   Projects.forEach((project, index) => list.push(<ProjectEntry key={index} id={index} project={project} />))
   return (
-    <div className='ProjectsPage'>
+    <div className={hiddenBar ? 'ProjectsPage sidebar-close' : 'ProjectsPage sidebar-open'}>
       <ul className="project-default">
         {list}
       </ul>
