@@ -8,7 +8,7 @@ const Contact = () => {
         <li className="contact-info">
           <a
             rel='noopener noreferrer'
-            target="_top"
+            target="_blank"
             href="mailto:sam.walker@comcast.net?Subject=In%20regards%20to%20your%20profile"
           >
             sam.walker@comcast.net
