@@ -201,7 +201,7 @@ button, .project-list-item, .nav-item, .thumbnail-image, .thumbnail-text, .conta
 }
 
 .project-thumbnail:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .hero {

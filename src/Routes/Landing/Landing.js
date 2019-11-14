@@ -9,6 +9,7 @@ const Landing = () => {
       <div className="intro">Hi, my name is Sam and I'm a full stack developer</div>
       <img className="hero" src={hero} alt="Me standing in front of a lake" />
       <Link to='/about'><button className="about-me-link">Learn More</button></Link>
+      <Link to='/projects'><button>View Projects</button></Link>
     </div>
   )
 }
