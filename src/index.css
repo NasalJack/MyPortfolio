@@ -44,7 +44,7 @@ h2 {
 .project-list {
   display: flex;
   height: 100vh;
-  padding-top: 18vh;
+  padding-top: 12vh;
   padding-left: 0;
   padding-right: 0;
   background-color: rgba(41, 56, 83, .9);
@@ -66,6 +66,7 @@ h2 {
   margin-top: 15px;
   margin-bottom: 15px;
   color: rgb(216, 169, 49);
+  text-shadow: black 1px 1px 4px;
 }
 
 nav {
@@ -103,6 +104,7 @@ footer {
   text-align: right;
   padding-right: 10px;
   color: rgb(216, 169, 49);
+  z-index: 10;
 }
 
 .container {
@@ -140,6 +142,7 @@ button {
   border-radius: 5px;
   background-color: rgba(41, 56, 83, .8);
   color: rgb(216, 169, 49);
+  text-shadow: black 1px 1px 4px;
 }
 
 .link-buttons {
@@ -175,9 +178,10 @@ button, .project-list-item, .nav-item, .thumbnail-image, .thumbnail-text, .conta
   margin: 5px 0 0 0 ;
   text-align: center;
   color: rgb(216, 169, 49);
+  text-shadow: black 1px 1px 4px;
 }
 
-.project-thumbnail {
+.project-thumbnail, .ProjectPage img {
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -188,6 +192,16 @@ button, .project-list-item, .nav-item, .thumbnail-image, .thumbnail-text, .conta
   border: 1px solid black;
   box-shadow: 2px 2px 8px;
   margin-bottom: 20px;
+  transition: all .2s ease-in-out;
+}
+
+.ProjectPage img {
+  background-color: black;
+  padding: 1px;
+}
+
+.project-thumbnail:hover {
+  transform: scale(1.05);
 }
 
 .hero {
@@ -234,13 +248,26 @@ a {
   color: black;
 }
 
+a:hover {
+  text-shadow: 1px 1px 1px grey;
+}
+
 .Header a, .Footer a {
-  color: rgb(216, 169, 49)
+  color: rgb(216, 169, 49);
+  text-shadow: black 1px 1px 4px;
+}
+
+.Header a:hover, .Footer a:hover {
+  text-shadow: grey 1px 1px 4px;
+}
+
+.navi-tem:hover, .project-list-item:hover {
+  text-shadow: grey 1px 1px 4px;
 }
 
 .contact-title {
   margin-top: 15vh;
-  margin-left: 10px;
+  
 }
 
 .contact-list {
@@ -249,7 +276,6 @@ a {
 }
 
 .contact-info {
-  margin-left: 20vw;
   margin-top: 10vh;
   font-size: 18px;
 }
@@ -293,6 +319,11 @@ a {
   button {
     margin-top: 40px;
     font-size: 28px;
+    transition: all .2s ease-in-out;
+  }
+
+  button:hover {
+    transform: scale(1.05);
   }
 
   .project-list {
@@ -308,7 +339,7 @@ a {
   }
 
   .thumbnail-image {
-    width: 40vw;
+    width: 50vw;
   }
 
   .thumbnail-text {
@@ -334,11 +365,9 @@ a {
 
 .contact-title {
   margin-top: 15vh;
-  margin-left: 10vw;
 }
 
 .contact-info {
-  margin-left: 30vw;
   margin-top: 10vh;
   font-size: 28px;
 }

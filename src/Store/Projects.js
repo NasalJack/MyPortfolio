@@ -14,8 +14,26 @@ const Projects = [
     screenshot: 'GoodMeal',
     builtWith: 'Javascript, React, PostgreSQL, Knex, Firebase, Node, Express',
     content: "GoodMeal is an app for creating and storing recipes along with a host of periphery functionalities, like creating shopping lists from a recipe based on what you need and already own or checking your owned ingredients against recipes to find what you can make with what you have on hand.",
-    page: 'https://good-meal-client.herokuapp.com/',
+    page: 'https://good-meal.now.sh/',
     repo: 'https://github.com/thinkful-ei-firefly/recipe-client'
+  },
+  {
+    name: 'Spaced Repetition',
+    title: 'Spaced Repetition',
+    screenshot: 'SpacedRepetition',
+    builtWith: 'Javascript, React, PostgreSQL, Knex, Node, Express',
+    content: "Spaced Repetition is an app for learning words from a language. It uses an algorithm based on the number of times you get a word right/wrong to determine how often to quiz you on that word in order to reinforce words you struggle with while tapering off on displaying words you know quite well.",
+    page: 'https://spaced-repetition-sam-ahmed.now.sh/',
+    repo: 'https://github.com/thinkful-ei-firefly/spaced-repetition-sam-ahmed-client'
+  },
+  {
+    name: 'Petful',
+    title: 'Petful',
+    screenshot: 'Petful',
+    builtWith: 'Javascript, React, Node',
+    content: "Petful is an app for adopting from a hypothetical animal shelter where only the cat and dog that have been with the shelter the longest are available for adoption at any given time. As part of a challenge, this app was built in a single day.",
+    page: 'https://petful-sam-richard.now.sh/pets',
+    repo: 'https://github.com/thinkful-ei-firefly/petful-client-sam-richard'
   },
   {
     name: 'Magic Quiz',
