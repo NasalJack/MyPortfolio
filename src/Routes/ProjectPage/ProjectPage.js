@@ -23,11 +23,11 @@ class ProjectPage extends React.Component {
           <p>Bult with {builtWith}</p>
           <p>{content}</p>
           <div className="link-buttons">
-            <a href={page}>
-              <button className="link site-link">View App</button>
+            <a target='_blank' rel='noopener noreferrer' href={page}>
+              <button className="button link site-link">View App</button>
             </a>
-            <a href={repo}>
-              <button className="link repo-link">Visit Repo</button>
+            <a target='_blank' rel='noopener noreferrer' href={repo}>
+              <button className="button link repo-link">Visit Repo</button>
             </a>
           </div>
         </div>

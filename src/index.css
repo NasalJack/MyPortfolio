@@ -68,12 +68,13 @@ h2 {
 }
 
 .Sidebar {
+  margin: 0;
   width: 30px;
   height: 30px;
-  padding: 0;
+  padding: 0 0 5px 0;
   border-radius: 1000px;
   position: fixed;
-  top: 40vh;
+  top: 45vh;
   background-color: rgba(41, 56, 83, 1);
   font-size: 20px;
   transition: all .8s ease-in-out;
@@ -85,7 +86,8 @@ h2 {
 }
 
 .Revealer {
-  left: 0
+  left: 0;
+  transform: rotate(180deg)
 }
 
 .ProjectsPage, .ProjectPage {
@@ -172,6 +174,7 @@ footer {
 }
 
 .content {
+  text-align: left;
   margin-bottom: 40px;
   max-width: 800px;
   margin-right: auto;
@@ -217,13 +220,29 @@ button, .project-list-item, .nav-item, .thumbnail-image, .thumbnail-text, .conta
 }
 
 .thumbnail-text {
-  margin: 5px 0 0 0 ;
+  margin: 0 0 5px 0 ;
   text-align: center;
   color: rgb(216, 169, 49);
   text-shadow: black 1px 1px 4px;
 }
 
-.project-thumbnail, .ProjectPage img {
+.thumbnail-summary {
+  text-align: left;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(216, 169, 49);
+  text-shadow: 1px 1px 2px black;
+}
+
+.thumbnail-summary:hover {
+  text-shadow: 1px 1px 2px black;
+}
+
+.project-thumbnail {
+  width: 90%;
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -238,6 +257,17 @@ button, .project-list-item, .nav-item, .thumbnail-image, .thumbnail-text, .conta
 }
 
 .ProjectPage img {
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  background-color: rgba(41, 56, 83, .9);
+  border: 1px solid black;
+  box-shadow: 2px 2px 8px;
+  margin-bottom: 20px;
+  transition: all .2s ease-in-out;
   background-color: black;
   padding: 1px;
 }
@@ -364,7 +394,7 @@ a:hover {
     transition: all .2s ease-in-out;
   }
 
-  button:hover {
+  .button:hover {
     transform: scale(1.05);
   }
 
@@ -377,6 +407,7 @@ a:hover {
   }
 
   .Sidebar {
+    padding: 0 0 6px 0;
     width: 40px;
     height: 40px;
     font-size: 26px;
@@ -392,10 +423,6 @@ a:hover {
 
   .sidebar-close {
     margin-left: 40px;
-  }
-
-  .thumbnail-image {
-    width: 50vw;
   }
 
   .thumbnail-text {
@@ -426,6 +453,14 @@ a:hover {
 .contact-info {
   margin-top: 10vh;
   font-size: 28px;
+}
+
+.project-thumbnail {
+  width: 70%;
+}
+
+.ProjectPage img {
+  width: 70%
 }
 
 }
