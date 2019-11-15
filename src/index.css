@@ -287,24 +287,26 @@ button, .project-list-item, .nav-item, .thumbnail-image, .thumbnail-text, .conta
 }
 
 .intro {
+  font-family: 'Unica One', cursive;
   text-align: center;
   margin-right:10vw;
   margin-left:10vw;
   margin-top: 8vh;
   margin-bottom: 10px;
   color: #A03E04;
-  font-size: 24px;
+  font-size: 28px;
   letter-spacing: .9px;
 }
 
 .job {
+  font-family: 'Unica One', cursive;
   text-align: center;
   margin-right:10vw;
   margin-left:10vw;
   margin-top: 10px;
   margin-bottom: 10px;
   color: #A03E04;
-  font-size: 24px;
+  font-size: 28px;
   letter-spacing: .9px;
 }
 
@@ -392,7 +394,7 @@ a:hover {
   }
 
   .intro, .job {
-    font-size: 48px;
+    font-size: 56px;
   }
 
   .job {
@@ -504,7 +506,7 @@ a:hover {
   }
 
   .intro {
-    margin-top: 12vh;
+    margin-top: 10vh;
   }
 
   .about {
