@@ -6,7 +6,6 @@ import Projects from '../../Store/Projects'
 const ProjectsPage = (props) => {
   const { hiddenBar } = props
   const list = []
-  console.log(Projects)
   Projects.forEach((project, index) => list.push(<ProjectEntry key={index} id={index} project={project} />))
   return (
     <div className={hiddenBar ? 'ProjectsPage sidebar-close' : 'ProjectsPage sidebar-open'}>
