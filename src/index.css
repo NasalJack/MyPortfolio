@@ -297,6 +297,17 @@ button, .project-list-item, .nav-item, .thumbnail-image, .thumbnail-text, .conta
   letter-spacing: .9px;
 }
 
+.job {
+  text-align: center;
+  margin-right:10vw;
+  margin-left:10vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #A03E04;
+  font-size: 24px;
+  letter-spacing: .9px;
+}
+
 .about-me-link, .project-link {
   margin-top: 20px;
   display: block;
@@ -380,8 +391,12 @@ a:hover {
     margin-top: 40px;
   }
 
-  .intro {
+  .intro, .job {
     font-size: 48px;
+  }
+
+  .job {
+    margin-top: 20px;
   }
 
   .screenshot {
